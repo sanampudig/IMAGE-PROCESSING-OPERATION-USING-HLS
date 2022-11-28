@@ -12,7 +12,9 @@ Requirements:
 - Xilinx HLS
 - Xilinx SDK
 - ZED BOARD FPGA
-- 
+
+More INFO : https://github.com/sanampudig/IMAGE-PROCESSING-OPERATION-USING-HLS/blob/main/Report.pdf
+
 ![IMAGE 2022-11-29 02:46:02](https://user-images.githubusercontent.com/110079648/204382627-98d07726-27ef-412f-9787-b106693a1584.jpg)
 
 # Output
