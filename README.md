@@ -44,4 +44,17 @@ INPUTS/OUTPUTS of “doHistStreach”- function which is used to perform histogr
 •	Output is array of processed pixels transmitted of AXI4 Stream to PS(Which can extracted from DDR Memory and converted into enhanced image)
 
 
+# Output
+
+<img width="627" alt="image" src="https://user-images.githubusercontent.com/110079648/204362015-38e5dd3e-78fb-4c2b-8241-f70eacd49af9.png">
+
+# Contributers
+- Gopala Krishna Reddy Sanampudi
+- Gogireddy Ravi Kiran Reddy
+# Acknowledgements
+- Dr. Nanditha Rao, Professor, IIIT-B
+- Shubhayu Das
+- Veerandra
+- Jahnavi Agarwal
+
 
