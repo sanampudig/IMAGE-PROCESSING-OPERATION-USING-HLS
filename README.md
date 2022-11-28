@@ -19,6 +19,9 @@ More INFO : https://github.com/sanampudig/IMAGE-PROCESSING-OPERATION-USING-HLS/b
 
 # Output
 
+<img width="804" alt="image" src="https://user-images.githubusercontent.com/110079648/204384015-a66ee3e0-148a-420c-89fb-b32ddd3d9fc6.png">
+
+
 <img width="627" alt="image" src="https://user-images.githubusercontent.com/110079648/204362015-38e5dd3e-78fb-4c2b-8241-f70eacd49af9.png">
 
 # Contributers
