@@ -1,0 +1,121 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Nov 25 23:08:45 2022
+# Process ID: 8012
+# Current directory: D:/HLS_PROJECT/CONTRAST_HISTOGRAM2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21360 D:\HLS_PROJECT\CONTRAST_HISTOGRAM2\CONTRAST_HISTOGRAM.xpr
+# Log file: D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/vivado.log
+# Journal file: D:/HLS_PROJECT/CONTRAST_HISTOGRAM2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/HLS_PROJECT/histogram/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/HLS_PROJECT/histogram_strech/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 904.367 ; gain = 281.930
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 7
+[Fri Nov 25 23:09:44 2022] Launched impl_1...
+Run output will be captured here: D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/runme.log
+file copy -force D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.sysdef D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.sdk/Block_design_wrapper.hdf
+
+launch_sdk -workspace D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.sdk -hwspec D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.sdk/Block_design_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.sdk -hwspec D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.sdk/Block_design_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248AA58D1
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2472.922 ; gain = 913.934
+set_property PROGRAM.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"Block_design_i/system_ila_0/inst/ila_lib"}]]
+Processed interface axi_dma_0_M_AXIS_MM2S_ila1_slot0
+set_property PROBES.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+Processing Interface axi_dma_0_M_AXIS_MM2S_ila1_slot0
+set_property PROBES.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+Processing Interface axi_dma_0_M_AXIS_MM2S_ila1_slot0
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248AA58D1
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248AA58D1
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248AA58D1
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248AA58D1
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"Block_design_i/system_ila_0/inst/ila_lib"}]]
+Processed interface axi_dma_0_M_AXIS_MM2S_ila1_slot0
+set_property PROBES.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+Processing Interface axi_dma_0_M_AXIS_MM2S_ila1_slot0
+set_property PROBES.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+Processing Interface axi_dma_0_M_AXIS_MM2S_ila1_slot0
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248AA58D1
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248AA58D1
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"Block_design_i/system_ila_0/inst/ila_lib"}]]
+Processed interface axi_dma_0_M_AXIS_MM2S_ila1_slot0
+set_property PROBES.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/HLS_PROJECT/CONTRAST_HISTOGRAM2/CONTRAST_HISTOGRAM.runs/impl_1/Block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+Processing Interface axi_dma_0_M_AXIS_MM2S_ila1_slot0
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248AA58D1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 26 00:36:56 2022...

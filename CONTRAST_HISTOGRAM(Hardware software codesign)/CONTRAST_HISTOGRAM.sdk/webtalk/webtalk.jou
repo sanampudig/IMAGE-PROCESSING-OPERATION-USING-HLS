@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Sat Nov 19 23:21:51 2022
+# Process ID: 15792
+# Current directory: D:/HLS_PROJECT/CONTRAST_HISTOGRAM/CONTRAST_HISTOGRAM.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: D:/HLS_PROJECT/CONTRAST_HISTOGRAM/CONTRAST_HISTOGRAM.sdk/webtalk/webtalk.log
+# Journal file: D:/HLS_PROJECT/CONTRAST_HISTOGRAM/CONTRAST_HISTOGRAM.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

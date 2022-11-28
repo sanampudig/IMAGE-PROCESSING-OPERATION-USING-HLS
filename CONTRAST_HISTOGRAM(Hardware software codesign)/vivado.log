@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Nov 25 22:53:14 2022
+# Process ID: 20060
+# Current directory: D:/HLS_PROJECT/CONTRAST_HISTOGRAM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19464 D:\HLS_PROJECT\CONTRAST_HISTOGRAM\CONTRAST_HISTOGRAM.xpr
+# Log file: D:/HLS_PROJECT/CONTRAST_HISTOGRAM/vivado.log
+# Journal file: D:/HLS_PROJECT/CONTRAST_HISTOGRAM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/HLS_PROJECT/CONTRAST_HISTOGRAM/CONTRAST_HISTOGRAM.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/HLS_PROJECT/histogram/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/HLS_PROJECT/histogram_strech/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 920.254 ; gain = 293.582
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 25 22:56:55 2022...
+s/impl_1/Block_design_wrapper.sysdef D:/HLS_PROJECT/CONTRAST_HISTOGRAM/CONTRAST_HISTOGRAM.sdk/Block_design_wrapper.hdf
+
+launch_sdk -workspace D:/HLS_PROJECT/CONTRAST_HISTOGRAM/CONTRAST_HISTOGRAM.sdk -hwspec D:/HLS_PROJECT/CONTRAST_HISTOGRAM/CONTRAST_HISTOGRAM.sdk/Block_design_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/HLS_PROJECT/CONTRAST_HISTOGRAM/CONTRAST_HISTOGRAM.sdk -hwspec D:/HLS_PROJECT/CONTRAST_HISTOGRAM/CONTRAST_HISTOGRAM.sdk/Block_design_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 25 22:56:50 2022...

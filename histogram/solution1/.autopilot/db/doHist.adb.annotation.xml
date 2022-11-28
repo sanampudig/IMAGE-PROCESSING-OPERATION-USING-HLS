@@ -1,0 +1,11 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="24" filename="histogram/core.cpp" linenumber="8" name="exitcond2" contextFuncName="doHist" moduleName="doHist" rtlName="exitcond2_fu_134_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="13" fileDirectory="D:\HLS_PROJECT"><\/item>
+<item  id="26" filename="histogram/core.cpp" linenumber="8" name="idxHist_1" contextFuncName="doHist" moduleName="doHist" rtlName="idxHist_1_fu_140_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="15" fileDirectory="D:\HLS_PROJECT"><\/item>
+<item  id="31" filename="histogram/core.cpp" linenumber="11" name="tmp" contextFuncName="doHist" moduleName="doHist" rtlName="tmp_fu_146_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="D:\HLS_PROJECT"><\/item>
+<item  id="40" filename="histogram/core.cpp" linenumber="15" name="exitcond" contextFuncName="doHist" moduleName="doHist" rtlName="exitcond_fu_151_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="18" fileDirectory="D:\HLS_PROJECT"><\/item>
+<item  id="42" filename="histogram/core.cpp" linenumber="15" name="idxPixel_1" contextFuncName="doHist" moduleName="doHist" rtlName="idxPixel_1_fu_157_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="24" fileDirectory="D:\HLS_PROJECT"><\/item>
+<item  id="47" filename="histogram/core.cpp" linenumber="20" name="tmp_3" contextFuncName="doHist" moduleName="doHist" rtlName="tmp_3_fu_167_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="D:\HLS_PROJECT"><\/item>
+<item  id="50" filename="histogram/core.cpp" linenumber="20" name="tmp_4" contextFuncName="doHist" moduleName="doHist" rtlName="tmp_4_fu_172_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="D:\HLS_PROJECT"><\/item>
+<\/annotationInfo>
+</annotationInfo>

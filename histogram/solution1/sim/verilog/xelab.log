@@ -1,0 +1,41 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "C:/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_doHist_top glbl -prj doHist.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile C:/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s doHist 
+Multi-threading is on. Using 6 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS_PROJECT/histogram/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS_PROJECT/histogram/solution1/sim/verilog/AESL_autobram_histo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_histo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS_PROJECT/histogram/solution1/sim/verilog/AESL_axi_slave_CTRL_BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_CTRL_BUS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS_PROJECT/histogram/solution1/sim/verilog/AESL_axi_s_inStream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_inStream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS_PROJECT/histogram/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS_PROJECT/histogram/solution1/sim/verilog/doHist.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_doHist_top
+INFO: [VRFC 10-2458] undeclared symbol bramhisto_Rst_A, assumed default net type wire [D:/HLS_PROJECT/histogram/solution1/sim/verilog/doHist.autotb.v:270]
+INFO: [VRFC 10-2458] undeclared symbol bramhisto_Rst_B, assumed default net type wire [D:/HLS_PROJECT/histogram/solution1/sim/verilog/doHist.autotb.v:277]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS_PROJECT/histogram/solution1/sim/verilog/doHist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module doHist
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/HLS_PROJECT/histogram/solution1/sim/verilog/doHist_CTRL_BUS_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module doHist_CTRL_BUS_s_axi
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.doHist_CTRL_BUS_s_axi
+Compiling module xil_defaultlib.doHist
+Compiling module xil_defaultlib.AESL_autobram_histo
+Compiling module xil_defaultlib.fifo(DEPTH=76800)
+Compiling module xil_defaultlib.fifo(DEPTH=76800,WIDTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=76800,WIDTH=2)
+Compiling module xil_defaultlib.fifo(DEPTH=76800,WIDTH=5)
+Compiling module xil_defaultlib.fifo(DEPTH=76800,WIDTH=6)
+Compiling module xil_defaultlib.AESL_axi_s_inStream
+Compiling module xil_defaultlib.AESL_axi_slave_CTRL_BUS
+Compiling module xil_defaultlib.apatb_doHist_top
+Compiling module work.glbl
+Built simulation snapshot doHist

@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# xsim v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Nov 17 21:57:23 2022
+# Process ID: 17848
+# Current directory: D:/HLS_PROJECT/histogram/solution2/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/doHist/xsim_script.tcl}
+# Log file: D:/HLS_PROJECT/histogram/solution2/sim/verilog/xsim.log
+# Journal file: D:/HLS_PROJECT/histogram/solution2/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/doHist/xsim_script.tcl
+# xsim {doHist} -autoloadwcfg -tclbatch {doHist.tcl}
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source doHist.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "2306885000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 2306925 ns : File "D:/HLS_PROJECT/histogram/solution2/sim/verilog/doHist.autotb.v" Line 418
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 217.988 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Nov 17 21:57:39 2022...

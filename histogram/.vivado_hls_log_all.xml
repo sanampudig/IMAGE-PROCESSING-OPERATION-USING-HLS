@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="ERROR: [IMPL 213-28] Failed to generate IP.&#xD;&#xA;command 'ap_source' returned error code&#xD;&#xA;    while executing&#xD;&#xA;&quot;source D:/HLS_PROJECT/histogram/solution1/export.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main D:/HLS_PROJECT/histogram/solution1/export.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="histogram" solutionName="solution1" date="2022-11-17T20:04:20.719+0530"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-40] Skipped source file 'leenawithoutcontrast.bmp'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="histogram" solutionName="solution3" date="2022-11-27T13:57:47.930+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Skipped source file 'LennaColour320240.bmp'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="histogram" solutionName="solution3" date="2022-11-27T13:57:47.914+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Skipped source file 'LennaColour320240.bmp'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="histogram" solutionName="solution2" date="2022-11-17T21:54:20.349+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Skipped source file 'leenawithoutcontrast.bmp'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="histogram" solutionName="solution2" date="2022-11-17T21:54:20.334+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Skipped source file 'LennaColour320240.bmp'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="histogram" solutionName="solution1" date="2022-11-17T19:59:08.997+0530" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

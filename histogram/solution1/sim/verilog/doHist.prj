@@ -1,0 +1,9 @@
+sv work "glbl.v"
+sv xil_defaultlib "AESL_autobram_histo.v"
+sv xil_defaultlib "AESL_axi_slave_CTRL_BUS.v"
+sv xil_defaultlib "AESL_axi_s_inStream.v"
+sv xil_defaultlib "AESL_fifo.v"
+sv xil_defaultlib "doHist.autotb.v"
+sv xil_defaultlib "doHist.v"
+sv xil_defaultlib "doHist_CTRL_BUS_s_axi.v"
+

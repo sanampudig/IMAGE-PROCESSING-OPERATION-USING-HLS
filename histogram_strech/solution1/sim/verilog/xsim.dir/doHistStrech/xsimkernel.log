@@ -1,0 +1,7 @@
+Running: xsim.dir/doHistStrech/xsimk.exe -simmode gui -wdb doHistStrech.wdb -simrunnum 0 -socket 53693
+Design successfully loaded
+Design Loading Memory Usage: 12040 KB (Peak: 12040 KB)
+Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 53604 KB (Peak: 53604 KB)
+Simulation CPU Usage: 45390 ms

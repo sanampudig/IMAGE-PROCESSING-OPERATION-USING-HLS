@@ -1,0 +1,127 @@
+#include "xaxidma.h"
+#include "xdohist.h"
+#include "xdohiststrech.h"
+#include "LenaOnCodes.h"
+#include "xtime_l.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+
+
+#define SIZE_ARR (320*240)
+
+#define MEM_BASE_ADDR 0x01000000
+#define TX_BUFFER_BASE (MEM_BASE_ADDR + 0x00100000)
+#define RX_BUFFER_BASE (MEM_BASE_ADDR + 0x00300000)
+
+unsigned char *m_dma_buffer_TX = (unsigned char*)TX_BUFFER_BASE;
+unsigned char *m_dma_buffer_RX = (unsigned char*)RX_BUFFER_BASE;
+
+
+unsigned char imgIn_HW[SIZE_ARR];
+
+
+unsigned int *hist_hw = (unsigned int*) 0x40000000;
+
+XAxiDma axiDma;
+int status;
+int initDMA()
+{
+	XAxiDma_Config *CfgPtr;
+	CfgPtr = XAxiDma_LookupConfig(XPAR_AXI_DMA_0_DEVICE_ID);
+	status = XAxiDma_CfgInitialize(&axiDma,CfgPtr);
+	if(status != XST_SUCCESS){
+		xil_printf("DMA config failed to initialize\r\n");
+		return status;
+	}
+	xil_printf("Initialized DMA config\r\n");
+
+	XAxiDma_IntrDisable(&axiDma,XAXIDMA_IRQ_ALL_MASK,XAXIDMA_DEVICE_TO_DMA);
+	XAxiDma_IntrDisable(&axiDma,XAXIDMA_IRQ_ALL_MASK,XAXIDMA_DMA_TO_DEVICE);
+	return XST_SUCCESS;
+}
+
+
+XDohist doHist;
+XDohiststrech doHistStrech;
+
+int initDoHist(){
+	int status;
+	XDohist_Config *doHist_cfg;
+	doHist_cfg=XDohist_LookupConfig(XPAR_DOHIST_0_DEVICE_ID);
+	if(!doHist_cfg){
+		xil_printf("Error loading config for doHist_cfg\n");
+
+	}
+	status =XDohist_CfgInitialize(&doHist,doHist_cfg);
+	if(status!= XST_SUCCESS){
+		xil_printf("Error initializing for doHist\n");
+	}
+	return status;
+
+}
+
+
+int initDoHistStrech()
+{
+	int status;
+	XDohiststrech_Config *doHistStrech_cfg;
+	doHistStrech_cfg = XDohiststrech_LookupConfig(XPAR_DOHISTSTRECH_0_DEVICE_ID);
+	if(!doHistStrech_cfg){
+			xil_printf("Error loading config for doHistStrech_cfg\n");
+
+		}
+		status =XDohiststrech_CfgInitialize(&doHistStrech,doHistStrech_cfg);
+		if(status!= XST_SUCCESS){
+			xil_printf("Error initializing for doHistStrech_cfg\n");
+		}
+		return status;
+
+}
+
+
+
+
+int main(){
+	Xil_DCacheDisable();
+	initDMA();
+	initDoHist();
+	initDoHistStrech();
+	unsigned char xMin;
+	unsigned char xMax;
+
+
+	for(int idxMin=0;idxMin<256;idxMin++){
+					    			xMin=idxMin;
+					    			if(hist_hw[idxMin]){
+					    				break;
+					    			}
+					    		}
+
+					    		for(int idxMax=256; idxMax>=0; idxMax--){
+					    			xMax=idxMax;
+					    			if(hist_hw[idxMax])
+					    				break;
+					    		}
+					    		xil_printf("(HW)xMin=%d xMax =%d\n",xMin,xMax);
+
+					    		XDohist_Start(&doHist);
+					    		XDohiststrech_Set_xMax(&doHistStrech,xMax);
+					    		XDohiststrech_Set_xMin(&doHistStrech,xMin);
+					    		XDohiststrech_Start(&doHistStrech);
+
+					    		//Xil_DCacheFlushRange((u32)imgIn_HW,SIZE_ARR*sizeof(unsigned char));
+					    		//Xil_DCacheFlushRange((u32)m_dma_buffer_RX,SIZE_ARR*sizeof(unsigned char));
+
+					    		XAxiDma_SimpleTransfer(&axiDma,(u32)imgIn_HW,SIZE_ARR*sizeof(unsigned char),XAXIDMA_DMA_TO_DEVICE);
+					    		XAxiDma_SimpleTransfer(&axiDma,(u32)m_dma_buffer_RX,SIZE_ARR*sizeof(unsigned char),XAXIDMA_DEVICE_TO_DMA);
+
+					    		while(XAxiDma_Busy(&axiDma,XAXIDMA_DMA_TO_DEVICE));
+					    	    while(XAxiDma_Busy(&axiDma,XAXIDMA_DEVICE_TO_DMA));
+
+					    	    Xil_DCacheInvalidateRange((u32)m_dma_buffer_RX,SIZE_ARR*sizeof(unsigned char));
+
+					    	    xil_printf("DMA out address :%X\n",m_dma_buffer_RX);
+
+
+					    	    return 0;
+}

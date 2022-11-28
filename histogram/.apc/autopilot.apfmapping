@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="leenawithoutcontrast.bmp" path="D:\HLS_PROJECT\histogram\leenawithoutcontrast.bmp"/>
+    <originFiles name="core.h" path="D:\HLS_PROJECT\histogram\core.h"/>
+    <originFiles name="core.cpp" path="D:\HLS_PROJECT\histogram\core.cpp"/>
+    <originFiles name="LennaColour320240.bmp" path="D:\HLS_PROJECT\histogram\LennaColour320240.bmp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_core.cpp" path="D:\HLS_PROJECT\histogram\test_core.cpp"/>
+    <originFiles name="cvt_colour.cpp" path="D:\imgpr\cvt_colour.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

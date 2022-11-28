@@ -1,0 +1,8 @@
+00:08:10 **** Incremental Build of configuration Debug for project finalhw ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+
+00:08:10 Build Finished (took 253ms)
+
