@@ -26,3 +26,15 @@ Ymax – Maximum Possible Value(i.e.255)
 
 <img width="660" alt="image" src="https://user-images.githubusercontent.com/110079648/204360776-abd692ff-d028-475f-9080-ad35669cb484.png">
 
+UNDERSTANDING:
+INPUTS/OUTPUTS of “doHist”- function which calculates histogram of given image.
+•	A image converted into pixel values stored in array(size:320*240=76800) which can be sent over AXI4 Stream.
+•	Output is array of 256 Values which can used to plot Histogram
+From this array we calculate max and minimum pixel value in the image. These values can be used to perform Histogram Stretch Operation.
+INPUTS/OUTPUTS of “doHistStreach”- function which is used to perform histogram stretch and adjust the contrast of image.
+•	A image converted into pixel values stored in array(size:320*240=76800) which can be sent over AXI4 Stream.
+•	Another input is minimum and maximum values of pixels intensity which are sent over AXI4-LITE
+•	Output is array of processed pixels transmitted of AXI4 Stream to PS(Which can extracted from DDR Memory and converted into enhanced image)
+
+
+
